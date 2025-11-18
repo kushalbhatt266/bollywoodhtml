@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: var(--themefont);
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   color: #222;
   line-height: 1.5;
 }
@@ -991,4 +991,95 @@ h1 {
 
 .profile-sec {
   background-color: #EFF2FB;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+.profile-txt p,
+.main-txt {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #66789C;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.profile-txt h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 10px;
+
+  line-height: 45px;
+  color: var(--headingclr);
+}
+
+.profile-txt span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 26px;
+  color: var(--btnclr);
+}
+
+.custom-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media screen and (max-width:980px) {
+  .custom-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.heading-sec {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.heading-sec h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.heading-sec p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #66789C;
+}
+.allProfile .nav-tabs li button {
+    padding: 10px 10px;
+}
+.nav-tabs li button {
+    display: inline-block;
+    margin: 0px 5px;
+    box-shadow: 0px 2px 4px -5px rgb(10, 42, 105);
+    align-items: center;
+    padding: 13px 17px;
+    width: auto;
+    background: #ffffff;
+    border: 1px solid #E0E6F7;
+    border-radius: 8px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #3C65F5;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.nav-tabs li button:hover, .nav-tabs li button.active {
+    color: #3C65F5;
+    border-color: #3C65F5;
+    box-shadow: 0px 2px 4px -5px rgb(10, 42, 105);
 }
