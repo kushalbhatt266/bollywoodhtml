@@ -278,6 +278,7 @@ button {
   left: 0;
   top: 100%;
   width: 260px;
+  border: 1px solid #E0E6F7;
   background-color: var(--white);
   box-shadow: var(--shadow-4);
   border-radius: 5px;
@@ -1274,4 +1275,3 @@ h1 {
 .swiper-pagination {
   padding-top: 20px;
 }
-
