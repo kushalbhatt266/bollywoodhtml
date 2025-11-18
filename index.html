@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Film Talent Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/list.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a5a18ae26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--====== NAVBAR ONE PART START ======-->
+        <section class="navbar-area navbar-one">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg align-items-center px-2 px-sm-0">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/jobhub-logo.svg" alt="Logo" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
+                            <ul class="navbar-nav m-auto mb-0">
+                                <li class="nav-item active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav1"
+                                        aria-controls="sub-nav1" aria-expanded="false" aria-label="Toggle navigation"
+                                        href="#">
+                                        About
+                                        <div class="sub-nav-toggler">
+                                            <span><i class="lni lni-chevron-down"></i></span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu collapse" id="sub-nav1">
+                                        <li><a href="#">About Us</a></li>
+                                        <li>
+                                            <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav2"
+                                                aria-controls="sub-nav2" aria-expanded="false"
+                                                aria-label="Toggle navigation" href="#">
+                                                Our Portfolio
+                                                <div class="sub-nav-toggler">
+                                                    <span><i class="lni lni-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">Our Teams</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav1"
+                                        aria-controls="sub-nav1" aria-expanded="false" aria-label="Toggle navigation"
+                                        href="#">
+                                        Recruiters
+                                        <div class="sub-nav-toggler">
+                                            <span><i class="lni lni-chevron-down"></i></span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu collapse" id="sub-nav1">
+                                        <li><a href="#">Recruiters 1</a></li>
+                                        <li>
+                                            <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav2"
+                                                aria-controls="sub-nav2" aria-expanded="false"
+                                                aria-label="Toggle navigation" href="#">
+                                                Recruiters 2
+                                                <div class="sub-nav-toggler">
+                                                    <span><i class="lni lni-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">Recruiters 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav1"
+                                        aria-controls="sub-nav1" aria-expanded="false" aria-label="Toggle navigation"
+                                        href="#">
+                                        Candidates
+                                        <div class="sub-nav-toggler">
+                                            <span><i class="lni lni-chevron-down"></i></span>
+                                        </div>
+                                    </a>
+                                    <ul class="sub-menu collapse" id="sub-nav1">
+                                        <li><a href="#">Candidates 1</a></li>
+                                        <li>
+                                            <a class="page-scroll" data-bs-toggle="collapse" data-bs-target="#sub-nav2"
+                                                aria-controls="sub-nav2" aria-expanded="false"
+                                                aria-label="Toggle navigation" href="#">
+                                                Candidates 2
+                                                <div class="sub-nav-toggler">
+                                                    <span><i class="lni lni-chevron-down"></i></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">Candidates 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                            <ul class="mb-0 gap-3">
+                                <li>
+                                    <a class="btn primary-btn-outline" href="#">Log In</a>
+                                </li>
+                                <li>
+                                    <a class="btn primary-btn me-3 me-sm-0" href="#">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- navbar -->
+                </div>
+            </div>
+            <!-- row -->
+            <!-- container -->
+        </section>
+        <!--====== NAVBAR ONE PART ENDS ======-->
+    </div>
+    <!-- Hero Section -->
+    <section class="herosection">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-xl-row">
+                <div class="col-xl-8">
+                    <div class="hero-content">
+                        <h1>Find Your, <br> Dream Talent Now</h1>
+                        <p>Find opportunities, connect with top film & media companies, and showcase your talent. Your
+                            next big break starts here.</p>
+                        <div class="search-bar">
+                            <div class="d-grid d-md-flex gap-4 align-items-center">
+                                <div class="field">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <div class="custom-select">
+                                        <input type="text" placeholder="Industry" class="select-input" readonly>
+                                        <i class="fa-solid fa-chevron-down arrow"></i>
+                                        <div class="select-dropdown">
+                                            <input type="text" placeholder="Search Industry..." class="dropdown-search">
+                                            <div class="options">
+                                                <span>Information Technology</span>
+                                                <span>Banking</span>
+                                                <span>Marketing</span>
+                                                <span>Healthcare</span>
+                                                <span>Construction</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider"></div>
+
+                                <div class="field">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div class="custom-select">
+                                        <input type="text" placeholder="Location" class="select-input" readonly>
+                                        <i class="fa-solid fa-chevron-down arrow"></i>
+
+                                        <div class="select-dropdown">
+                                            <input type="text" placeholder="Search Location..." class="dropdown-search">
+                                            <div class="options">
+                                                <span>Mumbai</span>
+                                                <span>Delhi</span>
+                                                <span>Bangalore</span>
+                                                <span>Hyderabad</span>
+                                                <span>Pune</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider"></div>
+
+                                <div class="field keyword-field">
+                                    <i class="fa-solid fa-grid-2"></i>
+                                    <input type="text" placeholder="Your keyword...">
+                                </div>
+                            </div>
+
+                            <button class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 d-flex justify-content-center mb-4 mb-lg-0 d-none d-md-flex">
+                    <div class="hero-image">
+                        <img src="./assets/images/film-2.webp" alt="illustration">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- countersection -->
+    <section class="seccpadd">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="counter-card">
+                        <span class="counter-no" data-number="20">0</span><span class="counter-k">k+</span>
+                        <h5>New Talents</h5>
+                        <p class="counter-text">Discover fresh actors, models, and performers ready for your next
+                            project.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="counter-card">
+                        <span class="counter-no" data-number="50">0</span> <span class="counter-k">k+</span>
+                        <h5>Professional Actors</h5>
+                        <p class="counter-text">Connect with experienced actors who have worked in films, ads, and web
+                            series.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="counter-card">
+                        <span class="counter-no" data-number="80">0</span><span class="counter-k">k+</span>
+                        <h5>Crew & Experts</h5>
+                        <p class="counter-text">Access skilled directors, cinematographers, editors, and other film
+                            professionals.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="counter-card">
+                        <span class="counter-no" data-number="10">0</span><span class="counter-k">k+</span>
+                        <h5>Projects Completed</h5>
+                        <p class="counter-text">Join a platform with thousands of successful film and media projects
+                            completed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- categorySlider -->
+    <section class="marketplace-section seccpadd">
+        <div class="container">
+            <div class="row">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-content">
+                    <h1 class="white-head">Main Categories</h1>
+                    <p>Please Select your preferred categorie and browse</p>
+                    <a href="#" class="dark-btn">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="col-lg-8 category-slider-inner">
+                    <div class="marketplace-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1554224155-61ADCf4B36f1?w=400"
+                                        class="card-img" alt="Finance">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Finance</h5>
+                                        <p class="card-text">546 Profile Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?w=400"
+                                        class="card-img" alt="Market Research">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Market Research</h5>
+                                        <p class="card-text">24 Profile Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1542838132-a6f0aFC547F6?w=400"
+                                        class="card-img" alt="Furniture Design">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Furniture Design</h5>
+                                        <p class="card-text">54 Profile Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400"
+                                        class="card-img" alt="Web Development">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Web Development</h5>
+                                        <p class="card-text">820 Profile Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400"
+                                        class="card-img" alt="Project Management">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Project Management</h5>
+                                        <p class="card-text">150 Profile Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="job-card">
+                                    <img src="https://images.unsplash.com/photo-1543286386-2e65a3081e97?w=400"
+                                        class="card-img" alt="Data Science">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">Data Science</h5>
+                                        <p class="card-text">310 Jobs Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccpadd profile-sec">
+
+    </section>
+    <!--====== FOOTER ONE PART START ======-->
+    <footer class="footer-area footer-one">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-4 col-sm-12">
+                        <div class="f-about pe-sm-5">
+                            <div class="footer-logo">
+                                <a href="#">
+                                    <img src="assets/images/jobhub-logo.svg" alt="Logo" />
+                                </a>
+                            </div>
+                            <p class="text">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        </div>
+                        <div class="footer-app-store d-none">
+                            <h5 class="download-title">Download Our App Now!</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cdn.ayroui.com/1.0/images/footer/app-store.svg" alt="app" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cdn.ayroui.com/1.0/images/footer/play-store.svg" alt="play" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-2 col-lg-2 col-sm-4">
+                        <div class="footer-link">
+                            <h6 class="footer-title">Company</h6>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Awards</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer link -->
+                    </div>
+                    <div class="col-6 col-xl-2 col-lg-3 col-sm-4">
+                        <div class="footer-link">
+                            <h6 class="footer-title">Services</h6>
+                            <ul>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Developer</a></li>
+                                <li><a href="#">Insights</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer link -->
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-4">
+                        <!-- Start Footer Contact -->
+                        <div class="footer-contact">
+                            <h6 class="footer-title">Help & Suuport</h6>
+                            <ul>
+                                <li>
+                                    <i class="lni lni-map-marker"></i> Madison Street, NewYork,
+                                    USA
+                                </li>
+                                <li><i class="lni lni-phone-set"></i> +88 556 88545</li>
+                                <li><i class="lni lni-envelope"></i> support@ayroui.com</li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Contact -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- footer widget -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="
+                  copyright
+                  text-center
+                  d-md-flex
+                  justify-content-between
+                  align-items-center
+                  ">
+                            <p class="text">Copyright © 2025 Jobbox. All Rights Reserved</p>
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="lni lni-twitter-original"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="lni lni-instagram-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="lni lni-linkedin-original"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- copyright -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- footer copyright -->
+    </footer>
+    <!--====== FOOTER ONE PART ENDS ======-->
+
+    <script>
+        const counters = document.querySelectorAll('.counter-no');
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-number');
+                const count = +counter.innerText;
+                const increment = target / 100; // speed: bigger number = faster
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+        });
+    </script>
+    <script>
+        //===== close navbar-collapse when a  clicked
+        let navbarTogglerOne = document.querySelector(
+            ".navbar-one .navbar-toggler"
+        );
+        navbarTogglerOne.addEventListener("click", function () {
+            navbarTogglerOne.classList.toggle("active");
+        });
+    </script>
+    <script>
+        document.querySelectorAll(".custom-select").forEach(selectBox => {
+            let input = selectBox.querySelector(".select-input");
+            let arrow = selectBox.querySelector(".arrow");
+            let dropdown = selectBox.querySelector(".select-dropdown");
+            let search = selectBox.querySelector(".dropdown-search");
+            let options = dropdown.querySelectorAll(".options span");
+
+            // OPEN/CLOSE DROPDOWN
+            input.onclick = () => {
+                dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+            };
+
+            arrow.onclick = () => {
+                dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+            };
+
+            // SELECT VALUE
+            options.forEach(option => {
+                option.onclick = () => {
+                    input.value = option.innerText;
+                    dropdown.style.display = "none";
+                };
+            });
+
+            // LIVE SEARCH
+            search.onkeyup = () => {
+                let val = search.value.toLowerCase();
+                options.forEach(opt => {
+                    opt.style.display = opt.innerText.toLowerCase().includes(val) ? "block" : "none";
+                });
+            };
+
+            // CLICK OUTSIDE CLOSE
+            document.addEventListener("click", (e) => {
+                if (!selectBox.contains(e.target)) {
+                    dropdown.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.marketplace-slider', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 15 },
+                992: { slidesPerView: 3, spaceBetween: 20 },
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

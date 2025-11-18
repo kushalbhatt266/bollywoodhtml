@@ -1,0 +1,139 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    gap: 18px;
+    width: 100%;
+    min-width: 800px;
+    margin: auto;
+}
+
+/* Icons + Inputs */
+.field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.field i {
+    color: #7f8c8d;
+    font-size: 15px;
+}
+
+/* Divider */
+.divider {
+    width: 2px;
+    height: 28px;
+    background: #e1e6f0;
+}
+
+/* Keyword Input */
+.keyword-field input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Custom Select Wrapper */
+.custom-select {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.select-input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #555;
+}
+
+/* Dropdown */
+.select-dropdown {
+    position: absolute;
+    top: 45px;
+    left: -33px;
+    width: 220px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    display: none;
+    z-index: 50;
+}
+
+.select-dropdown input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.options span {
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.options span:hover {
+    background: #f1f4ff;
+}
+
+/* Search Button */
+.search-btn {
+    background: var(--primary);
+    border: none;
+    padding: 12px 22px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.search-btn:hover {
+    background-color: #05264E;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+.search-btn i {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .search-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
