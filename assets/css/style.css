@@ -837,8 +837,20 @@ h1 {
   transform: translateY(-2px);
   transition: 0.2s;
 }
-
-
+.dark-clr i{
+  margin-left: 5px;
+}
+.dark-clr{
+  background-color: #05264E;
+}
+.dark-clr:hover{
+  background-color: #000;
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+/* .subcat-slide{
+  max-width: 220px;
+} */
 /* Counter Cards */
 .counter-card {
   text-align: center;
@@ -864,7 +876,7 @@ h1 {
 }
 
 .marketplace-section {
-  background-color: #3b59f5;
+  background-color:var(--primary);
   color: #fff;
   padding: 6rem 0;
   position: relative;
@@ -947,7 +959,7 @@ h1 {
   top: -2rem;
   width: 40px;
   height: 40px;
-  font-size: 5px;
+  font-size: 1rem;
   border-radius: 50%;
   background-color: #fff;
   color: var(--btnclr);
@@ -975,11 +987,10 @@ h1 {
   color: var(--btnclr);
 }
 
-/* .marketplace-section .swiper-button-prev::after,
+.marketplace-section .swiper-button-prev::after,
 .marketplace-section .swiper-button-next::after {
-  font-size: 1rem;
-  color: var(--btnclr);
-} */
+  content:none !important;
+}
 
 
 .marketplace-section .row:first-child {
@@ -1162,7 +1173,7 @@ h1 {
 }
 
 .profile-name {
-  font-size: 1.15rem;
+  font-size: 1rem;
   /* Reduced size slightly */
   font-weight: 600;
   color: #212529;
@@ -1170,7 +1181,7 @@ h1 {
 }
 
 .profile-title {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #6c757d;
   margin-bottom: 8px;
 }
@@ -1209,7 +1220,9 @@ h1 {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-
+.profile-description p{
+  margin-bottom: 0;
+}
 .profile-skills {
   margin-bottom: 1rem;
 }
@@ -1218,7 +1231,7 @@ h1 {
   display: inline-block;
   text-decoration: none;
   color: #05264E;
-  padding: 6px 18px;
+  padding: 6px 12px;
   color: #66789C;
   margin: 2px;
   border-radius: 5px;
@@ -1244,6 +1257,54 @@ h1 {
 .profile-footer .info-item {
   display: flex;
   align-items: center;
+  font-size: 0.7rem;
+}
+.subcat-slide p{
+      font-weight: 500 !important;
+    font-size: 12px !important;
+    color: #4F5E64;
+    line-height: 18px !important;
+}
+.subcat-slide h5{
+    font-size: 16px;
+    line-height: 26px;
+    color:var(--headingclr);
+    margin-bottom: 3px;
+}
+.text-info-right{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.columnslide .text-info-right{
+  width:100%;
+  text-align: left;
+}
+
+.columnslide .subcat-img{
+  width:100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.columnslide{
+  display: flex;
+  width:100%;
+  height: 100%;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+.subcat-slide{
+  border: 1px solid rgba(6, 18, 36, 0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .profile-footer .info-item i {
@@ -1274,4 +1335,97 @@ h1 {
 
 .swiper-pagination {
   padding-top: 20px;
+}
+.subcategories-slider{
+  padding-top: 40px;
+}
+.talent-prev-btn,
+.talent-next-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.talent-prev-btn:hover,
+.talent-next-btn:hover {
+    background: #f2f2f2;
+}
+
+.talent-prev-btn i,
+.talent-next-btn i {
+    font-size: 16px;
+    color: #333;
+}
+
+.talent-prev-btn {
+    left: 0px;
+}
+
+.talent-next-btn {
+    right:0px; 
+}
+.jobsearch {
+        background-color: #EFF2FB;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.job-sec-img img {
+    width: 100%;
+}
+
+.job-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-txt h2 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--headingclr);
+}
+
+.job-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.job-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+}
+
+.job-item h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.job-item p {
+    margin-top: 5px;
+    color: #66789c;
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+    .job-txt {
+        text-align: left;
+    }
+    .job-item {
+        align-items: center;
+    }
 }
