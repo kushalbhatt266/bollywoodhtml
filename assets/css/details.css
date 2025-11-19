@@ -161,7 +161,8 @@
 }
 
 .tabs-two .tab-content .tab-text .text {
-    color: var(--dark-3);
+    color: var(--textclr);
+    font-size: .875rem;
 }
 
 .candidate-overview-box {
