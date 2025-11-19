@@ -826,14 +826,15 @@ only screen and (min-width: 1400px) {
 }
 
 .herosection {
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 1.875rem;
 }
 
 .hero-image {
   background-image: url(../images/bg-banner.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   padding: 2rem;
   display: flex;
@@ -865,10 +866,11 @@ only screen and (min-width: 1400px) {
   top: 50%;
   left: 50%;
   width: 140px;
-  height:140px;
+  height: 140px;
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 .herosec-img1 {
   width: 100px;
   height: 100px;
@@ -895,7 +897,7 @@ only screen and (min-width: 1400px) {
 
 .herosec-img4 {
   width: 80px;
-  height:80px;
+  height: 80px;
   bottom: 5%;
   right: 15%;
   z-index: 15;
@@ -903,7 +905,7 @@ only screen and (min-width: 1400px) {
 
 .herosec-img5 {
   width: 80px;
-  height:80px;
+  height: 80px;
   top: 25%;
   left: 5%;
   z-index: 15;
@@ -1079,7 +1081,7 @@ h1 {
 
 .counter-text {
   font-weight: 500;
-  font-size: 0.98rem;
+  font-size: 0.875rem;
   line-height: 22px;
   color: var(--textclr);
 }
@@ -1649,9 +1651,10 @@ h1 {
     align-items: center;
   }
 }
-.pages{
+
+.pages {
   display: flex;
-  gap:10px;
+  gap: 10px;
   font-size: 12px;
   color: #4F5E64;
 }
