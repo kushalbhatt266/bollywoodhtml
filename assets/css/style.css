@@ -825,7 +825,6 @@ only screen and (min-width: 1400px) {
   color: var(--primary);
 }
 
-/* Footer end */
 .herosection {
   padding-top: 5rem;
   padding-bottom: 1.875rem;
@@ -841,6 +840,148 @@ only screen and (min-width: 1400px) {
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+
+.hero-img {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-img>img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.central {
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height:140px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.herosec-img1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 10%;
+  z-index: 15;
+}
+
+.herosec-img2 {
+  width: 80px;
+  height: 80px;
+  top: 5%;
+  right: 15%;
+  z-index: 15;
+}
+
+.herosec-img3 {
+  width: 100px;
+  height: 100px;
+  bottom: 10%;
+  left: 5%;
+  z-index: 15;
+}
+
+.herosec-img4 {
+  width: 80px;
+  height:80px;
+  bottom: 5%;
+  right: 15%;
+  z-index: 15;
+}
+
+.herosec-img5 {
+  width: 80px;
+  height:80px;
+  top: 25%;
+  left: 5%;
+  z-index: 15;
+}
+
+.herosec-img6 {
+  width: 100px;
+  height: 100px;
+  bottom: 35%;
+  right: 2%;
+  z-index: 15;
+}
+
+
+@keyframes float1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  33% {
+    transform: translate3d(-15px, 10px, 0);
+  }
+
+  66% {
+    transform: translate3d(15px, -10px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  33% {
+    transform: translate3d(10px, -15px, 0);
+  }
+
+  66% {
+    transform: translate3d(-10px, 15px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.herosec-img1 {
+  animation: float1 18s ease-in-out infinite alternate;
+}
+
+
+.herosec-img2 {
+  animation: float2 20s ease-in-out infinite alternate;
+}
+
+.herosec-img3 {
+  animation: float1 16s ease-in-out infinite alternate;
+  animation-delay: 1.5s;
+}
+
+.herosec-img4 {
+  animation: float2 22s ease-in-out infinite alternate;
+  animation-delay: 0.8s;
+}
+
+.herosec-img5 {
+  animation: float1 17s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+.herosec-img6 {
+  animation: float2 19s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
 }
 
 h5 {
@@ -944,7 +1085,7 @@ h1 {
 }
 
 .marketplace-section {
-  background-color: var(--primary);
+  background-color: var(--btnclr);
   color: #fff;
   padding: 6rem 0;
   position: relative;
@@ -1007,7 +1148,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.9) 100%);
+  background: url(../images/bg-catogries.png ) repeat-x center bottom;
   color: #fff;
 }
 
@@ -1193,7 +1334,7 @@ h1 {
   border-radius: 12px;
   padding: 24px;
   height: 100%;
-  /* Important for Swiper */
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1392,17 +1533,14 @@ h1 {
   font-weight: 600;
 }
 
-/* --- Swiper Slider Styling --- */
 .profile-card-slider {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 50px;
-  /* Space for pagination */
+  padding-bottom: 50px !important;
 }
 
 .swiper-slide {
   height: auto;
-  /* Allow height to be auto */
 }
 
 .swiper-pagination-bullet-active {
@@ -1510,4 +1648,10 @@ h1 {
   .job-item {
     align-items: center;
   }
+}
+.pages{
+  display: flex;
+  gap:10px;
+  font-size: 12px;
+  color: #4F5E64;
 }
