@@ -875,8 +875,8 @@ only screen and (min-width: 1400px) {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   /* transform: translate(-50%, -50%); */
   z-index: 10;
   animation: floatCenter 8s ease-in-out infinite alternate;
@@ -899,95 +899,50 @@ only screen and (min-width: 1400px) {
 }
 
 .herosec-img1 {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   top: 10%;
   left: 10%;
 }
 
 .herosec-img2 {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   top: 5%;
   right: 15%;
 }
 
 .herosec-img3 {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   bottom: 10%;
   left: 5%;
 }
 
 .herosec-img4 {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   bottom: 5%;
   right: 15%;
 }
 
 .herosec-img5 {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   top: 25%;
   left: 5%;
 }
 
 .herosec-img6 {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   bottom: 35%;
   right: 2%;
 }
-
-.herosec-img7 {
-  width: 90px;
-  height: 90px;
-  top: 18%;
-  right: 8%;
+.pages{
+  margin-top: 10px;
 }
 
-.herosec-img8 {
-  width: 70px;
-  height: 70px;
-  bottom: 22%;
-  left: 22%;
-}
-
-.herosec-img9 {
-  width: 60px;
-  height: 60px;
-  top: 40%;
-  right: 30%;
-}
-
-.herosec-img10 {
-  width: 85px;
-  height: 85px;
-  bottom: 8%;
-  left: 40%;
-}
-
-.herosec-img11 {
-  width: 110px;
-  height: 110px;
-  top: 2%;
-  left: 45%;
-}
-
-.herosec-img12 {
-  width: 75px;
-  height: 75px;
-  top: 60%;
-  right: 45%;
-}
-
-.herosec-img13 {
-  width: 95px;
-  height: 95px;
-  top: 50%;
-  left: 80%;
-}
 
 @keyframes floatCenter {
   0% {
