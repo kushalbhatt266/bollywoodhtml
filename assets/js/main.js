@@ -185,3 +185,22 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+const text = "Dream Talent Now!";
+  const typewriter = document.getElementById("typewriter");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typewriter.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 250); 
+    } else {
+      setTimeout(() => {
+        typewriter.innerHTML = "";
+        index = 0;
+        type();
+      }, 2000); 
+    }
+  }
+
+  type();
