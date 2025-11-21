@@ -1989,3 +1989,15 @@ h1 {
 .profile-main{
   overflow-x: hidden;
 }
+.profile-image-showcase img{
+  max-width: 240px;
+}
+.profile-image-showcase{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+a{
+  text-decoration: none !important;
+}
