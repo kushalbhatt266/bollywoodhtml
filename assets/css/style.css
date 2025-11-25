@@ -1893,7 +1893,7 @@ h1 {
         background: #fff;
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         margin-bottom: 30px;
       }
 #typewriter {
@@ -2000,4 +2000,20 @@ h1 {
 }
 a{
   text-decoration: none !important;
+}
+.profile-right{
+  max-height: 45px !important;
+}
+.profile-job_card {
+    border-radius: 6px;
+    border: 1px solid #E0E6F7;
+    overflow: hidden;
+    margin-bottom: 24px;
+    position: relative;
+    background: #F8FAFF;
+    padding: 1.5rem 1rem;
+}
+.job-logo-profile{
+  width: 120px;
+  padding-right: 10px;
 }
