@@ -1,15 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/list.css">
+    <link rel="stylesheet" href="./assets/css/details.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!--Nav-->
     <div class="container-fluid">
         <!--====== NAVBAR ONE PART START ======-->
         <section class="navbar-area navbar-one">
@@ -209,170 +215,160 @@
         </section>
         <!--====== NAVBAR ONE PART ENDS ======-->
     </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-9 bg-white shadow p-4 rounded mt-5 mb-5">
 
-          <h1>Create Your Profile</h1>
+    <div class="profile-main">
+        <div class="row">
+            <div class="col-sm-1 ">
+                <div class="custom-sidenav">
+                    <ul class="custom-sidenav-menu">
+                        <a href="./dashboard.html">
 
-          <!-- Tabs -->
-          <ul class="nav nav-pills mb-4 position-sticky top-0 bg-white pt-2" id="profileTabs">
-            <li class="nav-item"><a class="nav-link active" href="#personal">Personal Info</a></li>
-            <li class="nav-item"><a class="nav-link" href="#career">Career Info</a></li>
-            <li class="nav-item"><a class="nav-link" href="#work">Work Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Info</a></li>
-          </ul>
+                            <li class="custom-sidenav-link ">
+                                <div class="custom-sidenav-icon">
+                                    <i class="fa-solid fa-table-columns"></i>
+                                </div>
+                                <span>Dashboard</span>
+                            </li>
+                        </a>
+                        <a href="./profilePage.html">
 
-          <form>
-            <!-- Personal Info -->
-            <section id="personal" class="section-card mt-1">
-              <div class="row">
-                <div class="col-lg-3">
-                  <h4>Personal Info</h4>
+                            <li class="custom-sidenav-link custom-sidenav-active">
+                                <div class="custom-sidenav-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <span>Profile</span>
+                            </li>
+                        </a>
+                        <a href="#">
 
-                </div>
-                <div class="col-lg-9">
-                  <div class="mb-3">
-                <label class="form-label">Full Name</label>
-                <input type="text" class="form-control" placeholder="Enter full name">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Nickname / Stage Name</label>
-                <input type="text" class="form-control" placeholder="Enter stage name">
-              </div>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Date of Birth</label>
-                  <input type="date" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Gender</label>
-                  <select class="form-select">
-                    <option selected>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Profile Photo</label>
-                  <input type="file" class="form-control" id="profilePhoto">
-                  <img id="profilePreview" class="preview-img" src="#" alt="Profile Preview" style="display:none;">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Cover Photo</label>
-                  <input type="file" class="form-control" id="coverPhoto">
-                  <img id="coverPreview" class="preview-img" src="#" alt="Cover Preview" style="display:none;">
-                </div>
-              </div>
-                </div>
-              </div>
-              
-            </section>
+                            <li class="custom-sidenav-link ">
+                                <div class="custom-sidenav-icon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <span>Enquiries</span>
+                            </li>
+                        </a>
+                        <a href="./setting.html">
 
-            <!-- Career Info -->
-            <section id="career" class="section-card">
-              <div class="row">
-                <div class="col-md-3">
-                   <h4>Career Information</h4>
-                </div>
-                <div class="col-md-9">
-                  <div class="mb-3">
-                <label class="form-label">Industry Role</label>
-                <div class="input-group mb-2">
-                  <input type="text" class="form-control" id="roleInput" placeholder="Type a role and press Add">
-                  <button class="btn btn-outline-primary" type="button" id="addRoleBtn">Add</button>
-                </div>
-                <div id="roleList"></div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Famous Works</label>
-                <textarea class="form-control" rows="3" placeholder="List movies, shows, songs, etc."></textarea>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Price per Hour (INR)</label>
-                <input type="number" class="form-control" placeholder="e.g., 500">
-              </div>
-              <div class="mb-3">
-                <label class="form-label d-block">Availability</label>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="availability" value="available" checked>
-                  <label class="form-check-label">Available</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="availability" value="not_available">
-                  <label class="form-check-label">Not Available</label>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Social Media Links</label>
-                <input type="text" class="form-control mb-2" placeholder="Facebook URL">
-                <input type="text" class="form-control mb-2" placeholder="Instagram URL">
-                <input type="text" class="form-control mb-2" placeholder="Twitter URL">
-                <input type="text" class="form-control mb-2" placeholder="YouTube Profile URL">
-              </div>
-                </div>
-              </div>
-             
-              
-            </section>
+                            <li class="custom-sidenav-link">
+                                <div class="custom-sidenav-icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <span>Settings</span>
+                            </li>
+                        </a>
 
-            <!-- Work Experience -->
-            <section id="work" class="section-card">
-              <div class="row">
-                <div class="col-md-3"><h4>Work Experience</h4></div>
-                <div class="col-md-9">
-                   <div class="row mb-3">
-                <div class="col-md-6">
-                  <label class="form-label">Last Work Location</label>
-                  <input type="text" class="form-control" placeholder="e.g., Mumbai Film Studio">
+                    </ul>
                 </div>
-                <div class="col-md-6">
-                  <label class="form-label">Experience in Field (years)</label>
-                  <input type="number" class="form-control" placeholder="e.g., 5">
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Description of Work</label>
-                <textarea class="form-control" rows="3" placeholder="Describe recent projects and responsibilities"></textarea>
-              </div>
-                </div>
-              </div>
-              
-             
-            </section>
-
-            <!-- Contact Info -->
-            <section id="contact" class="section-card">
-              <div class="row">
-                <div class="col-md-3">
-              <h4>Contact Info</h4>
-
-                </div>
-                <div class="col-md-9">
-                   <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="Enter email">
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Phone</label>
-                <input type="text" class="form-control" placeholder="Enter phone number">
-              </div>
-                </div>
-              </div>
-             
-            </section>
-
-            <div class="d-flex justify-content-end mt-3">
-              <button type="reset" class="main-btn me-2">Cancel</button>
-              <button type="submit" class="main-btn">Save Profile</button>
             </div>
-          </form>
+
+            <div class="col-sm-11">
+
+                <div class="candidate-about seccpadd mb-4">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+
+                                <ul class="nav nav-pills mb-4 position-sticky top-0 bg-white pt-2" id="profileTabs">
+                                    <li class="nav-item"><a class="nav-link " href="./profilePage.html">Personal
+                                            Info</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link active" href="./profileCareer.html">Career Info</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileWork.html">Work Experience</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileContect.html">Contact Info</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profilePhotos.html">Photos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileVideo.html">Videos</a></li>
+                                </ul>
+
+                                <form>
+                                   
+
+                                    <!-- Career Info -->
+                                    <section id="career" class="section-card">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h4>Career Information</h4>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Industry Role</label>
+                                                    <div class="input-group mb-2">
+                                                        <input type="text" class="form-control" id="roleInput"
+                                                            placeholder="Type a role and press Add">
+                                                        <button class="btn btn-outline-primary" type="button"
+                                                            id="addRoleBtn">Add</button>
+                                                    </div>
+                                                    <div id="roleList"></div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Famous Works</label>
+                                                    <textarea class="form-control" rows="3"
+                                                        placeholder="List movies, shows, songs, etc.">Movie 1, Movie 2, TV Show 1</textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Price per Hour (INR)</label>
+                                                    <input type="number" class="form-control" placeholder="e.g., 500"
+                                                        value="1000">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label d-block">Availability</label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="availability"
+                                                            value="available" checked>
+                                                        <label class="form-check-label">Available</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="availability"
+                                                            value="not_available">
+                                                        <label class="form-check-label">Not Available</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Social Media Links</label>
+                                                    <input type="text" class="form-control mb-2"
+                                                        placeholder="Facebook URL"
+                                                        value="https://facebook.com/username">
+                                                    <input type="text" class="form-control mb-2"
+                                                        placeholder="Instagram URL"
+                                                        value="https://instagram.com/username">
+                                                    <input type="text" class="form-control mb-2"
+                                                        placeholder="Twitter URL" value="https://twitter.com/username">
+                                                    <input type="text" class="form-control mb-2"
+                                                        placeholder="YouTube Profile URL"
+                                                        value="https://youtube.com/channel/username">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+                                   
+
+
+                                    
+
+                                    <div class="d-flex justify-content-end mt-3">
+                                        <button type="reset" class="main-btn me-2">Cancel</button>
+                                        <button type="submit" class="main-btn">Save Profile</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-2 mt-4 d-flex  justify-content-center">
+                                <div class="ad-img">
+
+                                    <img src="./assets/images/adv-v.JPG" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
 
+
+    <!--Footer-->
     <footer class="footer-area footer-one">
         <div class="footer-widget">
             <div class="container">
@@ -496,12 +492,12 @@
                   justify-content-end
                   align-items-start
                   ">
-                         <div class="pages">
-                                    <a href="">Privacy Policy</a>
-                                    <a href="">Terms & Conditions</a>
-                                    <a href="">Security</a>
-                                </div>
-                                </div>
+                            <div class="pages">
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms & Conditions</a>
+                                <a href="">Security</a>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -513,52 +509,7 @@
         <!-- footer copyright -->
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.querySelectorAll('#profileTabs a').forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          target.scrollIntoView({ behavior: 'smooth' });
-          document.querySelectorAll('#profileTabs a').forEach(a => a.classList.remove('active'));
-          this.classList.add('active');
-        });
-      });
 
-      const addRoleBtn = document.getElementById('addRoleBtn');
-      const roleInput = document.getElementById('roleInput');
-      const roleList = document.getElementById('roleList');
-      function addRole() {
-        const role = roleInput.value.trim();
-        if(role) {
-          const badge = document.createElement('span');
-          badge.className = 'badge bg-primary me-2 mb-2';
-          badge.textContent = role;
-          const removeBtn = document.createElement('button');
-          removeBtn.type = 'button';
-          removeBtn.className = 'btn-close btn-close-white btn-sm';
-          removeBtn.setAttribute('aria-label', 'Remove');
-          removeBtn.onclick = () => badge.remove();
-          badge.appendChild(removeBtn);
-          roleList.appendChild(badge);
-          roleInput.value = '';
-        }
-      }
-      addRoleBtn.addEventListener('click', addRole);
-      roleInput.addEventListener('keypress', function(e) {
-        if(e.key === 'Enter') { e.preventDefault(); addRole(); }
-      });
+</body>
 
-      function previewImage(input, previewId) {
-        const preview = document.getElementById(previewId);
-        if(input.files && input.files[0]) {
-          const reader = new FileReader();
-          reader.onload = function(e) { preview.src = e.target.result; preview.style.display = 'block'; }
-          reader.readAsDataURL(input.files[0]);
-        }
-      }
-      document.getElementById('profilePhoto').addEventListener('change', () => previewImage(event.target,'profilePreview'));
-      document.getElementById('coverPhoto').addEventListener('change', () => previewImage(event.target,'coverPreview'));
-    </script>
-  </body>
 </html>

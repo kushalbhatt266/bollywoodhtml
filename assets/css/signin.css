@@ -11,6 +11,36 @@
     --gray-4: #e0e0e0;
 }
 
+.signin-area {
+    background-image: 
+        linear-gradient(rgba(0, 0, 80, 0.6), rgba(0, 0, 80, 0.6)),
+        url(../images/film-4.webp);
+    background-size: cover;
+    background-position: center;
+}
+    
+ .signin-img img{
+    border-radius: 6px;
+ }
+ .signin-img{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+    padding-top: 30px;
+ }
+ .signup-img img{
+    border-radius: 6px;
+ }
+ .signup-img{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+ }
 .signin-one .rounded-buttons .primary-btn {
     background: var(--primary);
     color: var(--white);

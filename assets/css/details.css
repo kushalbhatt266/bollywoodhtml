@@ -113,8 +113,8 @@
 }
 
 .tabs-two .nav .nav-item a.active {
-    color: var(--primary);
-    background: #eef3ff;
+    color:#fff;
+    background: var(--btnclr);
     /* border: 1px solid var(--gray-4); */
     border-bottom: 0;
     border-top: 0;
@@ -243,4 +243,11 @@
 
 .adv-vertical img {
     width: 120px;
+}
+.yt-videos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap:30px;
 }

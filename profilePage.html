@@ -268,54 +268,60 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-10">
-                                <div class="profile-job_card">
-                                    <div class="d-flex gap-2 justify-content-between">
-                                        <div class="d-flex  gap-2 justify-content-between w-100">
-                                            <div class="profile-left d-flex gap-2">
-                                                <img src="assets/images/av6.jpg" class="job-logo-profile rounded"
-                                                    alt="">
-                                                <div>
-                                                    <h3 class="fw-bold job-title "><a href="#">Mohit Kumar</a></h3>
-                                                    <p class="tag-what mb-0">
-                                                        <i class="fas fa-briefcase"></i> Mumbai, India
-                                                    </p>
-                                                    <div class="d-flex gap-2 job-tags">
-                                                        <span>Actor</span>
-                                                        <span>Dancer</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-grid justify-content-end profile-right d-none">
-                                                <button class="main-btn">Edit Profile</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1 mt-3">
-                                        <h6>Short Discription</h6>
-                                        <p class="text-secondary small job-desc">
-                                            Worked on multiple feature films and TV shows, responsible for acting,
-                                            choreography, and on-set coordination. Collaborated with directors and
-                                            production teams to ensure high-quality performances.
-                                        </p>
-                                        <p class="tag-what mb-1 d-flex gap-2 align-items-center">
-                                            <i class="fas fa-briefcase"></i> Fulltime
-                                        </p>
 
-                                    </div>
-
-                                </div>
                                 <ul class="nav nav-pills mb-4 position-sticky top-0 bg-white pt-2" id="profileTabs">
-                                    <li class="nav-item"><a class="nav-link active" href="#personal">Personal
+                                    <li class="nav-item"><a class="nav-link active" href="./profilePage.html">Personal
                                             Info</a>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="#career">Career Info</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#work">Work Experience</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Info</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileCareer.html">Career Info</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileWork.html">Work Experience</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileContect.html">Contact Info</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profilePhotos.html">Photos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./profileVideo.html">Videos</a></li>
                                 </ul>
 
                                 <form>
                                     <!-- Personal Info -->
                                     <section id="personal" class="section-card mt-1">
+                                        <div class="profile-job_card">
+                                            <div class="d-flex gap-2 justify-content-between">
+                                                <div class="d-flex  gap-2 justify-content-between w-100">
+                                                    <div class="profile-left d-flex gap-2">
+                                                        <img src="assets/images/av6.jpg"
+                                                            class="job-logo-profile rounded" alt="">
+                                                        <div>
+                                                            <h3 class="fw-bold job-title "><a href="#">Mohit Kumar</a>
+                                                            </h3>
+                                                            <p class="tag-what mb-0">
+                                                                <i class="fas fa-briefcase"></i> Mumbai, India
+                                                            </p>
+                                                            <div class="d-flex gap-2 job-tags">
+                                                                <span>Actor</span>
+                                                                <span>Dancer</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-grid justify-content-end profile-right d-none">
+                                                        <button class="main-btn">Edit Profile</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 mt-3">
+                                                <h6>Short Discription</h6>
+                                                <p class="text-secondary small job-desc">
+                                                    Worked on multiple feature films and TV shows, responsible for
+                                                    acting,
+                                                    choreography, and on-set coordination. Collaborated with directors
+                                                    and
+                                                    production teams to ensure high-quality performances.
+                                                </p>
+                                                <p class="tag-what mb-1 d-flex gap-2 align-items-center">
+                                                    <i class="fas fa-briefcase"></i> Fulltime
+                                                </p>
+
+                                            </div>
+
+                                        </div>
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <h4>Personal Info</h4>
@@ -359,119 +365,6 @@
                                                         <img id="coverPreview" class="preview-img" src="#"
                                                             alt="Cover Preview" style="display:none;">
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </section>
-
-                                    <!-- Career Info -->
-                                    <section id="career" class="section-card">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h4>Career Information</h4>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Industry Role</label>
-                                                    <div class="input-group mb-2">
-                                                        <input type="text" class="form-control" id="roleInput"
-                                                            placeholder="Type a role and press Add">
-                                                        <button class="btn btn-outline-primary" type="button"
-                                                            id="addRoleBtn">Add</button>
-                                                    </div>
-                                                    <div id="roleList"></div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Famous Works</label>
-                                                    <textarea class="form-control" rows="3"
-                                                        placeholder="List movies, shows, songs, etc.">Movie 1, Movie 2, TV Show 1</textarea>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Price per Hour (INR)</label>
-                                                    <input type="number" class="form-control" placeholder="e.g., 500"
-                                                        value="1000">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label d-block">Availability</label>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="availability"
-                                                            value="available" checked>
-                                                        <label class="form-check-label">Available</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="availability"
-                                                            value="not_available">
-                                                        <label class="form-check-label">Not Available</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Social Media Links</label>
-                                                    <input type="text" class="form-control mb-2"
-                                                        placeholder="Facebook URL"
-                                                        value="https://facebook.com/username">
-                                                    <input type="text" class="form-control mb-2"
-                                                        placeholder="Instagram URL"
-                                                        value="https://instagram.com/username">
-                                                    <input type="text" class="form-control mb-2"
-                                                        placeholder="Twitter URL" value="https://twitter.com/username">
-                                                    <input type="text" class="form-control mb-2"
-                                                        placeholder="YouTube Profile URL"
-                                                        value="https://youtube.com/channel/username">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-
-                                    <!-- Work Experience -->
-                                    <section id="work" class="section-card">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h4>Work Experience</h4>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Last Work Location</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="e.g., Mumbai Film Studio"
-                                                            value="Mumbai Film Studio">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Experience in Field
-                                                            (years)</label>
-                                                        <input type="number" class="form-control" placeholder="e.g., 5"
-                                                            value="5">
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Description of Work</label>
-                                                    <textarea class="form-control" rows="3"
-                                                        placeholder="Describe recent projects and responsibilities">Worked on multiple feature films and TV shows, responsible for acting, choreography, and on-set coordination. Collaborated with directors and production teams to ensure high-quality performances.</textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-
-                                    <!-- Contact Info -->
-                                    <section id="contact" class="section-card">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <h4>Contact Info</h4>
-
-                                            </div>
-                                            <div class="col-md-9">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Email</label>
-                                                    <input type="email" class="form-control" placeholder="Enter email"
-                                                        value="mohitkumar1234567@gmail.com">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Phone</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter phone number" value="9199999999">
                                                 </div>
                                             </div>
                                         </div>
@@ -640,32 +533,7 @@
         <!-- footer copyright -->
     </footer>
 
-    <script>
-        // Prefill role list dynamically
-        const roleList = document.getElementById('roleList');
-        const roleInput = document.getElementById('roleInput');
-        const roles = ['Actor', 'Dancer'];
-
-        function displayRoles() {
-            roleList.innerHTML = '';
-            roles.forEach(role => {
-                const div = document.createElement('div');
-                div.textContent = role;
-                div.className = 'badge bg-primary me-2 mb-1';
-                roleList.appendChild(div);
-            });
-        }
-
-        displayRoles();
-
-        document.getElementById('addRoleBtn').addEventListener('click', () => {
-            if (roleInput.value.trim() !== '') {
-                roles.push(roleInput.value.trim());
-                displayRoles();
-                roleInput.value = '';
-            }
-        });
-    </script>
+  
 </body>
 
 </html>
