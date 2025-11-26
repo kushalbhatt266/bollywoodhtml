@@ -2017,6 +2017,24 @@ a{
   width: 120px;
   padding-right: 10px;
 }
+@media screen and (max-width:780px) {
+  #type{
+    font-size: 28px;
+    line-height: 28px !important;
+
+  border-right: 2px solid black !important; /* cursor color */
+
+  }
+  #type-above{
+    font-size: 28px;
+    line-height: 28px !important;
+  }
+  
+@keyframes typing {
+  0%, 10% { width: 0; }
+  90%, 100% { width: 100% !important; } 
+}
+}
 #type {
   display: inline-block;
   white-space: nowrap;
