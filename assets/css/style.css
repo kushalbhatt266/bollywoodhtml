@@ -223,7 +223,7 @@ button {
 }
 
 .navbar-one .navbar .navbar-nav .nav-item.mega-parent .mega-menu a {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .navbar-one .navbar .navbar-nav .nav-item a::before {
@@ -564,11 +564,7 @@ only screen and (min-width: 1400px) {
   border-radius: 6px;
 }
 
-.mega-menu .col-md-3 h6 {
-  font-weight: 700;
-  margin-bottom: 12px;
-  font-size: 15px;
-}
+
 
 .mega-menu a {
   display: block;
@@ -2045,6 +2041,11 @@ a{
 .mega-menu .internal-links a:hover{
   color:var(--primary) !important;
 
+}
+.internal-links h6{
+    font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 15px;
 }
 .navbar-nav li a:hover{
   color:var(--primary) !important;
