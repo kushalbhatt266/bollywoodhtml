@@ -933,7 +933,7 @@ only screen and (min-width: 1400px) {
   width: 120px;
   height: 120px;
   bottom: 35%;
-  right: 2%;
+  right: 6%;
 }
 .pages{
   margin-top: 10px;
@@ -2118,3 +2118,99 @@ a{
     display: block;
     font-size: 18px;
   }
+  /* Wrapper */
+.enquiry-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Labels */
+.enquiry-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Input Container */
+.input-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-items.default input,
+.input-items.default textarea,
+.input-items.default select {
+    width: 100%;
+    padding: 12px 40px 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.input-items.default textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Icons inside input */
+.input-items.default i {
+    position: absolute;
+    right: 14px;
+    color: #777;
+    font-size: 15px;
+}
+
+/* Input Focus Effect */
+.input-items.default input:focus,
+.input-items.default textarea:focus,
+.input-items.default select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.2);
+}
+
+/* Dropdown Select */
+.input-items.default select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Button Styling */
+
+
+
+/* Text Styles */
+.text-muted {
+    color: #777 !important;
+}
+
+.rounded-buttons {
+    margin-top: 10px;
+}
+
+/* Small Heading */
+.enquiry-form p.fs-6 {
+    margin-bottom: 0px;
+}
+
+/* Shadow */
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+}
+.enquiry-head p{
+  font-size: 14px;
+  color: #212529;
+}
+.enquiry-head h2{
+  color: #05264E;
+}
+.enquiry-head{
+  padding-bottom: 20px;
+}
+.enquiry-type{
+  padding-top: 2px;
+}

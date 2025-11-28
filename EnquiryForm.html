@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Dashboard</title>
+    <title>Enquiry form</title>
+    <link rel="stylesheet" href="./assets/css/signin.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/list.css">
-    <link rel="stylesheet" href="./assets/css/details.css">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
 </head>
 
 <body>
-    <!--Nav-->
-   <div class="container-fluid">
+    <div class="container-fluid">
         <!--====== NAVBAR ONE PART START ======-->
         <section class="navbar-area navbar-one">
             <div class="row">
@@ -146,7 +142,7 @@
                                                 <a href="#">Light Technician</a>
                                                 <a href="#">Sound Technician</a>
                                             </div>
-                                            
+
 
                                         </div>
                                     </div>
@@ -228,210 +224,117 @@
         <!--====== NAVBAR ONE PART ENDS ======-->
     </div>
 
-    <div class="profile-main">
-        <div class="row">
-            <div class="col-lg-1 ">
-                <div class="custom-sidenav">
-                    <ul class="custom-sidenav-menu">
-                        <a href="./dashboard.html">
+    <!--====== SIGNIN ONE PART START ======-->
+    <section class="signin-area signin-one pt-3 pb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 row justify-content-center align-items-center d-none">
+                    <div class="signup-img ">
 
-                            <li class="custom-sidenav-link ">
-                                <div class="custom-sidenav-icon">
-                                    <i class="fa-solid fa-table-columns"></i>
-                                </div>
-                                <span>Dashboard</span>
-                            </li>
-                        </a>
-                        <a href="./profilePage.html">
-
-                            <li class="custom-sidenav-link custom-sidenav-active">
-                                <div class="custom-sidenav-icon">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <span>Profile</span>
-                            </li>
-                        </a>
-                        <a href="./EnquiryDetails.html">
-
-                            <li class="custom-sidenav-link ">
-                                <div class="custom-sidenav-icon">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <span>Enquiries</span>
-                            </li>
-                        </a>
-                        <a href="./setting.html">
-
-                            <li class="custom-sidenav-link">
-                                <div class="custom-sidenav-icon">
-                                    <i class="fa-solid fa-gear"></i>
-                                </div>
-                                <span>Settings</span>
-                            </li>
-                        </a>
-
-                    </ul>
+                        <img src="./assets/images/login.png" alt="" class="d-none">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-11">
+                <div class="col-lg-8">
+                    <form action="#">
+                        <div class="enquiry-form form-style-two rounded-buttons shadow-sm">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mb-1 text-primary fs-6">Raise an Enquiry</p>
+                                    <h2 class="fs-4">Contact for Enquiry</h2>
+                                    <p class="small text-muted">
+                                        Fill the details below to enquire about this actor for movies, events, brand
+                                        collaboration, interviews, or promotions.
+                                    </p>
+                                </div>
 
-                <div class="candidate-about seccpadd mb-4">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-10">
+                                <div class="col-md-6">
 
-                                
-                                <form>
-                                    <!-- Personal Info -->
-                                    <section id="personal" class="section-card mt-1">
-                                        <ul class="nav nav-pills mb-4 position-sticky top-0 bg-white pt-2" id="profileTabs">
-                                            <li class="nav-item"><a class="nav-link active" href="./profilePage.html">Personal
-                                                    Info</a>
-                                            </li>
-                                            <li class="nav-item"><a class="nav-link" href="./profileCareer.html">Career Info</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="./profileWork.html">Work Experience</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="./profileContect.html">Contact Info</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="./profilePhotos.html">Photos</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="./profileVideo.html">Videos</a></li>
-                                        </ul>
-                                        <div class="profile-job_card">
-                                            <div class="d-flex gap-2 justify-content-between">
-                                                <div class="d-flex  gap-2 justify-content-between w-100">
-                                                    <div class="profile-left d-flex gap-2">
-                                                        <img src="assets/images/av6.jpg"
-                                                            class="job-logo-profile rounded" alt="">
-                                                        <div>
-                                                            <h3 class="fw-bold job-title "><a href="#">Mohit Kumar</a>
-                                                            </h3>
-                                                            <p class="tag-what mb-0">
-                                                                <i class="fas fa-briefcase"></i> Mumbai, India
-                                                            </p>
-                                                            <div class="d-flex gap-2 job-tags">
-                                                                <span>Actor</span>
-                                                                <span>Dancer</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-grid justify-content-end profile-right d-none">
-                                                        <button class="main-btn">Edit Profile</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1 mt-3">
-                                                <h6 class="d-none">Short Discription</h6>
-                                                <p class="text-secondary small job-desc d-none">
-                                                    Worked on multiple feature films and TV shows, responsible for
-                                                    acting,
-                                                    choreography, and on-set coordination. Collaborated with directors
-                                                    and
-                                                    production teams to ensure high-quality performances.
-                                                </p>
-                                                <p class="tag-what mb-1 d-flex gap-2 align-items-center">
-                                                    <i class="fas fa-briefcase"></i> Fulltime
-                                                </p>
-
-                                            </div>
-
+                                    <div class="form-input">
+                                        <label>Your Full Name</label>
+                                        <div class="input-items default">
+                                            <input type="text" placeholder="Enter your full name" />
+                                            <i class="fa-solid fa-user"></i>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-3 d-none">
-                                                <h4>Personal Info</h4>
-
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class=" row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Full Name</label>
-                                                        <input type="text" class="form-control"
-                                                        placeholder="Enter full name" value="Mohit Kumar">
-
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Nickname / Stage Name</label>
-                                                        <input type="text" class="form-control"
-                                                        placeholder="Enter stage name" value="Micky">
-
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Short Discription</label>
-                                                    
-                                                        <textarea name="" class="form-control"    value="Worked on multiple feature films and TV shows, responsible for acting" id="discription"></textarea>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Price (INR)</label>
-                                                    <input type="number" class="form-control" placeholder="e.g., 500"
-                                                        value="1000">
-                                                </div>  
-                                                <div class="mb-3">
-                                                    <label class="form-label d-block">Wroking type</label>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="availability"
-                                                            value="available" checked>
-                                                        <label class="form-check-label">Per Hour</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="availability"
-                                                            value="not_available">
-                                                        <label class="form-check-label">Full Shift</label>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Date of Birth</label>
-                                                        <input type="date" class="form-control" value="10/10/2000">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Gender</label>
-                                                        <select class="form-select">
-                                                            <option selected>Male</option>
-                                                            <option>Female</option>
-                                                            <option>Other</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Profile Photo</label>
-                                                        <input type="file" class="form-control" id="profilePhoto">
-                                                        <img id="profilePreview" class="preview-img" src="#"
-                                                            alt="Profile Preview" style="display:none;">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="form-label">Cover Photo</label>
-                                                        <input type="file" class="form-control" id="coverPhoto">
-                                                        <img id="coverPreview" class="preview-img" src="#"
-                                                            alt="Cover Preview" style="display:none;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </section>
-
-                                    <div class="d-flex justify-content-end mt-3">
-                                        <button type="reset" class="main-btn me-2">Cancel</button>
-                                        <button type="submit" class="main-btn">Save Profile</button>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="col-md-2 mt-4 d-flex  justify-content-center">
-                                <div class="ad-img">
+                                </div>
 
-                                    <img src="./assets/images/adv-v.JPG" alt="">
+                                <div class="col-md-6">
+                                    <div class="form-input">
+                                        <label>Your Contact Number</label>
+                                        <div class="input-items default">
+                                            <input type="text" placeholder="Enter your phone number" />
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input">
+                                        <label>Your Email</label>
+                                        <div class="input-items default">
+                                            <input type="email" placeholder="Enter your email" />
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <div class="form-input">
+                                        <label>Select Enquiry Type</label>
+                                        <div class="input-items default">
+                                            <select>
+                                                <option disabled selected>Choose Enquiry Type</option>
+                                                <option>Movie / Casting</option>
+                                                <option>Brand Collaboration</option>
+                                                <option>Live Event Appearance</option>
+                                                <option>Interview / Media Request</option>
+                                                <option>PR / Promotional Activity</option>
+                                                <option>Other</option>
+                                            </select>
+                                            <i class="fa-solid fa-list"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-input">
+                                        <label>Your Message</label>
+                                        <div class="input-items default">
+                                            <textarea placeholder="Describe your enquiry briefly"></textarea>
+                                            <i class="fa-solid fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-input rounded-buttons">
+                                        <button class="btn primary-btn rounded-full" type="submit">
+                                            Submit Enquiry
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-input text-center">
+                                        <p class="text small text-muted ">
+                                            Our team will contact you within 24–48 hours.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+
                 </div>
             </div>
-
+            <!-- row -->
         </div>
-    </div>
+        <!-- container -->
+    </section>
+    <!--===== SIGNIN ONE PART ENDS =====-->
 
-
-    <!--Footer-->
+    <!--====== FOOTER ONE PART START ======-->
     <footer class="footer-area footer-one">
         <div class="footer-widget">
             <div class="container">
@@ -493,14 +396,14 @@
                     <div class="col-xl-3 col-lg-3 col-sm-4">
                         <!-- Start Footer Contact -->
                         <div class="footer-contact">
-                            <h6 class="footer-title">Help & Support</h6>
+                            <h6 class="footer-title">Help & support</h6>
                             <ul>
                                 <li>
                                     <i class="lni lni-map-marker"></i> Madison Street, NewYork,
                                     USA
                                 </li>
-                                <li><i class="lni lni-phone-set"></i> +88 9999999999</li>
-                                <li><i class="lni lni-envelope"></i> support@bollywoodtallent.com</li>
+                                <li><i class="lni lni-phone-set"></i> +88 556 88545</li>
+                                <li><i class="lni lni-envelope"></i> support@ayroui.com</li>
                             </ul>
                         </div>
                         <!-- End Footer Contact -->
@@ -514,7 +417,7 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="
                   copyright
                   text-center
@@ -542,28 +445,10 @@
                                 <li>
                                     <a href="#"><i class="lni lni-linkedin-original"></i></a>
                                 </li>
-
                             </ul>
                         </div>
                         <!-- copyright -->
                     </div>
-                    <div class="col-lg-6">
-                        <div class="
-                  copyright
-                  text-center
-                  d-md-flex
-                  justify-content-end
-                  align-items-start
-                  ">
-                            <div class="pages">
-                                <a href="">Privacy Policy</a>
-                                <a href="">Terms & Conditions</a>
-                                <a href="">Security</a>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
                 <!-- row -->
             </div>
@@ -571,12 +456,10 @@
         </div>
         <!-- footer copyright -->
     </footer>
-
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--====== FOOTER ONE PART ENDS ======-->
     <script src="assets/js/main.js"></script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/7a5a18ae26.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
