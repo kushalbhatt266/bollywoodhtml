@@ -2203,7 +2203,7 @@ a{
 }
 .enquiry-head p{
   font-size: 14px;
-  color: #212529;
+  color: #222;
 }
 .enquiry-head h2{
   color: #05264E;
@@ -2213,4 +2213,170 @@ a{
 }
 .enquiry-type{
   padding-top: 2px;
+}
+
+.enquiry-table {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(5, 38, 78, 0.10);
+    overflow-x: auto;
+}
+
+/* Table Wrapper Mobile Scroll */
+@media screen and (max-width: 780px) {
+    .enquiry-table {
+        overflow-x: scroll;
+    }
+}
+
+.custom-enquiry-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Head */
+.custom-enquiry-table th {
+    background: #05264E;
+    color: #fff;
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+/* Table Rows */
+.custom-enquiry-table td {
+    padding: 14px;
+    color: #05264E;
+    border-bottom: 1px solid rgba(5, 38, 78, 0.15);
+    font-size: 14px;
+}
+
+/* 🌟 Odd row subtle blue shadow */
+.custom-enquiry-table tr:nth-child(odd) {
+    background: #f7faff;
+    box-shadow: inset 0 0 6px rgba(13, 110, 253, 0.15);
+}
+
+/* Hover on rows */
+.custom-enquiry-table tr:hover {
+    background: rgba(13, 110, 253, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+/* Description truncate */
+.truncate {
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Eye button */
+.view-btn {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+.social-links{
+  display: flex;
+  flex-direction: column;
+}
+.social-links a{
+color:#007bff
+}
+.social-links a:hover{
+color:var(--headingclr)
+}
+.view-btn:hover {
+    background: #0747b3;
+    transform: scale(1.05);
+}
+
+/* =====================
+       MODAL DESIGN
+   ===================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 38, 78, 0.45);
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* show modal */
+.modal-overlay.active {
+    display: flex;
+    visibility: visible;
+}
+
+/* Modal Box */
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 550px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    border-top: 5px solid #0d6efd;
+    animation: popup 0.3s ease-out;
+}
+
+/* Animation */
+@keyframes popup {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Modal heading */
+.modal-box h3 {
+    color: #05264E;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Modal text */
+.modal-box p {
+    color: #05264E;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 8px 0;
+}
+
+/* Close button */
+.close-btn {
+    background-color: #05264E;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+    background-color: #0d6efd;
+    transform: scale(1.05);
 }

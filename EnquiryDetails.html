@@ -279,219 +279,69 @@
                 <div class="candidate-about seccpadd mb-4">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-md-10">
+                            <div class="col-lg-10">
+                                <div class="enquiry-table">
+                                    <div class="enquiry-head">
+                                        <h2>Enquiry Table</h2>
+                                        <p>All the related enquiries shows here ..!</p>
+                                    </div>
 
+                                    <table class="custom-enquiry-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.</th>
+                                                <th>Name</th>
+                                                <th>Contact Number</th>
+                                                <th>Email</th>
+                                                <th>Enquiry Type</th>
+                                                <th>Description</th>
+                                                <th>View</th>
+                                            </tr>
+                                        </thead>
 
-                                <form>
-                                    <!-- Personal Info -->
-                                    <section id="personal" class="section-card mt-1">
-                                        <div class="enquiry-head">
-                                            <h2>Enquiries Recieved</h2>
-                                            <p>“Here you can find all enquiries submitted by potential clients. Review
-                                                their information and connect with them to provide the required
-                                                support.”</p>
-                                        </div>
-                                        <div class="col-md-12 row">
-                                            <div class="col-md-6">
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rahul Sharma</td>
+                                                <td>9876543210</td>
+                                                <td>rahul@example.com</td>
+                                                <td>Actor Hire</td>
+                                                <td class="truncate">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                                    varius, dolor vel suscipit viverra, turpis lorem facilisis nunc...
+                                                </td>
+                                                <td>
+                                                    <button class="view-btn"
+                                                        onclick="openModal(`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius, dolor vel suscipit viverra, turpis lorem facilisis nunc...`)">
+                                                        👁
+                                                    </button>
+                                                </td>
+                                            </tr>
 
-                                                <div class="profile-job_card">
-                                                    <div class="d-flex gap-2 justify-content-between">
-                                                        <div class="d-flex  gap-2 justify-content-between w-100">
-                                                            <div class="profile-left d-flex gap-2">
-                                                                <img src="assets/images/av6.jpg"
-                                                                    class="job-logo-profile rounded" alt="">
-                                                                <div>
-                                                                    <h3 class="fw-bold job-title "><a href="#">Rohit
-                                                                            Kumar</a>
-                                                                    </h3>
-                                                                    <p class="tag-what mb-0">
-                                                                        <i class="fas fa-briefcase"></i> Mumbai, India
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Contact no: <span> +91 9999999999</span>
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Email: <span>rohitkumar@gmail.com </span>
-                                                                    </p>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Priya Verma</td>
+                                                <td>9876501234</td>
+                                                <td>priya@example.com</td>
+                                                <td>Promotional Content</td>
+                                                <td class="truncate">
+                                                    Looking for an actor to shoot promotional content for our brand's
+                                                    new product launch event. Duration 2 hours.
+                                                </td>
+                                                <td>
+                                                    <button class="view-btn"
+                                                        onclick="openModal(`Looking for an actor to shoot promotional content for our brand's new product launch event. Duration 2 hours.`)">
+                                                        👁
+                                                    </button>
+                                                </td>
+                                            </tr>
 
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="d-grid justify-content-end profile-right d-none">
-                                                                <button class="main-btn">Edit Profile</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 mt-3">
-                                                        <div class="d-flex gap-2   ">
-                                                            <h6 class="enquiry-type">Enquiry type: </h6>
-                                                            <p>Brand Collaboration</p>
-                                                        </div>
+                                        </tbody>
+                                    </table>
 
-                                                        <p class="text-secondary small job-desc ">
-                                                            “We are casting actors for promotional videos, social media
-                                                            campaigns, and brand showcases. If you are passionate about
-                                                            acting and can confidently perform on camera, we invite you
-                                                            to be a part of our production.”
-                                                        </p>
-
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-
-                                                <div class="profile-job_card">
-                                                    <div class="d-flex gap-2 justify-content-between">
-                                                        <div class="d-flex  gap-2 justify-content-between w-100">
-                                                            <div class="profile-left d-flex gap-2">
-                                                                <img src="assets/images/av6.jpg"
-                                                                    class="job-logo-profile rounded" alt="">
-                                                                <div>
-                                                                    <h3 class="fw-bold job-title "><a href="#">Yash
-                                                                            Kumar</a>
-                                                                    </h3>
-                                                                    <p class="tag-what mb-0">
-                                                                        <i class="fas fa-briefcase"></i> Mumbai, India
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Contact no: <span> +91 9999999999</span>
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Email: <span>yashkumar@gmail.com </span>
-                                                                    </p>
-
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="d-grid justify-content-end profile-right d-none">
-                                                                <button class="main-btn">Edit Profile</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 mt-3">
-                                                        <div class="d-flex gap-2   ">
-                                                            <h6 class="enquiry-type">Enquiry type: </h6>
-                                                            <p>Pomotional</p>
-                                                        </div>
-
-                                                        <p class="text-secondary small job-desc ">
-                                                            “We are looking to hire talented actors for our upcoming
-                                                            promotional content. If you have a strong screen presence,
-                                                            confidence, and the ability to deliver engaging
-                                                            performances, we would love to collaborate with you.”
-                                                        </p>
-
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-
-                                                <div class="profile-job_card">
-                                                    <div class="d-flex gap-2 justify-content-between">
-                                                        <div class="d-flex  gap-2 justify-content-between w-100">
-                                                            <div class="profile-left d-flex gap-2">
-                                                                <img src="assets/images/av6.jpg"
-                                                                    class="job-logo-profile rounded" alt="">
-                                                                <div>
-                                                                    <h3 class="fw-bold job-title "><a href="#">Ronit
-                                                                            jaiswal</a>
-                                                                    </h3>
-                                                                    <p class="tag-what mb-0">
-                                                                        <i class="fas fa-briefcase"></i> Mumbai, India
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Contact no: <span> +91 9999999999</span>
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Email: <span>ronitjaiswal@gmail.com </span>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="d-grid justify-content-end profile-right d-none">
-                                                                <button class="main-btn">Edit Profile</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 mt-3">
-                                                        <div class="d-flex gap-2   ">
-                                                            <h6 class="enquiry-type">Enquiry type: </h6>
-                                                            <p>Pomotional</p>
-                                                        </div>
-
-                                                        <p class="text-secondary small job-desc ">
-                                                            “Join us as the face of our next promotional project! We’re
-                                                            looking for dynamic actors who can bring stories to life,
-                                                            connect with our audience, and represent our brand with
-                                                            energy and style.”
-                                                        </p>
-
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-
-                                                <div class="profile-job_card">
-                                                    <div class="d-flex gap-2 justify-content-between">
-                                                        <div class="d-flex  gap-2 justify-content-between w-100">
-                                                            <div class="profile-left d-flex gap-2">
-                                                                <img src="assets/images/av6.jpg"
-                                                                    class="job-logo-profile rounded" alt="">
-                                                                <div>
-                                                                    <h3 class="fw-bold job-title "><a href="#">Abhishek
-                                                                            sharma</a>
-                                                                    </h3>
-                                                                    <p class="tag-what mb-0">
-                                                                        <i class="fas fa-briefcase"></i> Mumbai, India
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Contact no: <span> +91 9999999999</span>
-                                                                    </p>
-                                                                    <p class="tag-what mb-0">
-                                                                        Email: <span>abhisheksharma@gmail.com </span>
-                                                                    </p>
-
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="d-grid justify-content-end profile-right d-none">
-                                                                <button class="main-btn">Edit Profile</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 mt-3">
-                                                        <div class="d-flex gap-2   ">
-                                                            <h6 class="enquiry-type">Enquiry type: </h6>
-                                                            <p>Brand Collaboration</p>
-                                                        </div>
-
-                                                        <p class="text-secondary small job-desc ">
-                                                            “We are seeking skilled actors to feature in our promotional
-                                                            campaigns. The ideal candidates should be expressive,
-                                                            camera-friendly, and able to portray brand messages with
-                                                            authenticity and impact.”
-                                                        </p>
-
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </section>
-
-
-                                </form>
+                                </div>
                             </div>
-                            <div class="col-md-2 mt-4 d-flex  justify-content-center">
+                            <div class="col-lg-2 mt-4 d-flex  justify-content-center">
                                 <div class="ad-img">
 
                                     <img src="./assets/images/adv-v.JPG" alt="">
@@ -646,7 +496,26 @@
         </div>
         <!-- footer copyright -->
     </footer>
+    <div id="popupModal" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Description</h3>
+            <hr>
+            <p id="modalText"></p>
 
+            <button class="close-btn main-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+    <script>
+        function openModal(description) {
+            document.getElementById("modalText").innerText = description;
+            document.getElementById("popupModal").classList.add("active");
+        }
+
+        function closeModal() {
+            document.getElementById("popupModal").classList.remove("active");
+        }
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
